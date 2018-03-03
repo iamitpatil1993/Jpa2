@@ -1,0 +1,218 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>helloworld</servlet-name>
+		<servlet-class>com.example.web.servlet.HelloWorldServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>helloworld</servlet-name>
+		<url-pattern>/helloWorld</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>fieldAccessType</servlet-name>
+		<servlet-class>com.example.web.servlet.accesstypes.FieldAccessTypeDemoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>fieldAccessType</servlet-name>
+		<url-pattern>/accessyypes</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>propertyAccessType</servlet-name>
+		<servlet-class>com.example.web.servlet.accesstypes.PropertyAccessTypedemoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>propertyAccessType</servlet-name>
+		<url-pattern>/propertyAccessType</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>mixAccessType</servlet-name>
+		<servlet-class>com.example.web.servlet.accesstypes.MixAccessTypeDemoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>mixAccessType</servlet-name>
+		<url-pattern>/mixAccessType</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>tableMapping</servlet-name>
+		<servlet-class>com.example.web.servlet.tablemapping.EmployeeTableMappingDemoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>tableMapping</servlet-name>
+		<url-pattern>/tableMapping</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>lobBinary</servlet-name>
+		<servlet-class>com.example.web.servlet.lob.binary.BinaryLobEmployeeDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeSimpleEnumerationDemoServlet</servlet-name>
+		<display-name>EmployeeSimpleEnumerationDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.enumeration.EmployeeSimpleEnumerationDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeCstomEnummDemoServlet</servlet-name>
+		<display-name>EmployeeCstomEnummDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.enumeration.EmployeeCstomEnummDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeCustomEnumOrdinalAttributeConverterDemoServlet</servlet-name>
+		<display-name>EmployeeCustomEnumOrdinalAttributeConverterDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.attributeconverter.EmployeeCustomEnumOrdinalAttributeConverterDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeIdGenTableDemoServlet</servlet-name>
+		<display-name>EmployeeIdGenTableDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.identitygeneration.table.EmployeeIdGenTableDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeIdGenSequenceDemoServlet</servlet-name>
+		<display-name>EmployeeIdGenSequenceDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.identitygeneration.sequence.EmployeeIdGenSequenceDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeIdGenIdentityDemoServlet</servlet-name>
+		<display-name>EmployeeIdGenIdentityDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.identitygeneration.identity.EmployeeIdGenIdentityDemoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>lobBinary</servlet-name>
+		<url-pattern>/lobBinary</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeSimpleEnumerationDemoServlet</servlet-name>
+		<url-pattern>/EmployeeSimpleEnumerationDemoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeCstomEnummDemoServlet</servlet-name>
+		<url-pattern>/EmployeeCstomEnummDemoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeCustomEnumOrdinalAttributeConverterDemoServlet</servlet-name>
+		<url-pattern>/employeeCustomEnumOrdinalAttributeConverterDemoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeIdGenTableDemoServlet</servlet-name>
+		<url-pattern>/employeeIdGenTableDemoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeIdGenSequenceDemoServlet</servlet-name>
+		<url-pattern>/employeeIdGenSequenceDemoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeIdGenIdentityDemoServlet</servlet-name>
+		<url-pattern>/employeeIdGenIdentityDemoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EmployeeOneToOne</servlet-name>
+		<display-name>EmployeeOneToOne</display-name>
+		<servlet-class>com.example.web.servlet.relationships.onetoone.EmployeeOneToOneRelDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeOneToOnerelMapsIdDemoServlet</servlet-name>
+		<display-name>EmployeeOneToOnerelMapsIdDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.relationships.onetoone.mapsid.EmployeeOneToOnerelMapsIdDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OneToManyDemoServlet</servlet-name>
+		<display-name>OneToManyDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.relationships.collectionvalue.onetomany.OneToManyDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeUsingManyToMany</servlet-name>
+		<display-name>EmployeeUsingManyToMany</display-name>
+		<description></description>
+		<servlet-class>com.example.jpa.domain.relationships.collectionvalue.manytomany.EmployeeUsingManyToMany</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ManyToManyWithExtrColumnsWithCompositeKeyDemoServlet</servlet-name>
+		<display-name>ManyToManyWithExtrColumnsWithCompositeKeyDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.jpa.domain.relationships.collectionvalue.manytomany.extracolumns.compositekey.ManyToManyWithExtrColumnsWithCompositeKeyDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmbeddableDemoServlet</servlet-name>
+		<display-name>EmbeddableDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.embeddable.EmbeddableDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ElementCollectionDemoServlet</servlet-name>
+		<display-name>ElementCollectionDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.elementcollection.ElementCollectionDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CascadDemoServlet</servlet-name>
+		<display-name>CascadDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.jpa.domain.relationships.cascad.CascadDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>JPQLDemoServlet</servlet-name>
+		<display-name>JPQLDemoServlet</display-name>
+		<description></description>
+		<servlet-class>com.example.web.servlet.JPQLDemoServlet</servlet-class>
+	</servlet>
+		<servlet-mapping>
+		<servlet-name>EmployeeOneToOne</servlet-name>
+		<url-pattern>/employeeOneToOne</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>EmployeeOneToOnerelMapsIdDemoServlet</servlet-name>
+			<url-pattern>/employeeOneToOnerelMapsIdDemoServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>OneToManyDemoServlet</servlet-name>
+			<url-pattern>/oneToManyDemoServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>EmployeeUsingManyToMany</servlet-name>
+			<url-pattern>/employeeUsingManyToMany</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>ManyToManyWithExtrColumnsWithCompositeKeyDemoServlet</servlet-name>
+			<url-pattern>/ManyToManyWithExtrColumnsWithCompositeKeyDemoServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>EmbeddableDemoServlet</servlet-name>
+			<url-pattern>/embeddableDemoServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>ElementCollectionDemoServlet</servlet-name>
+			<url-pattern>/elementCollectionDemoServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>CascadDemoServlet</servlet-name>
+			<url-pattern>/cascadDemoServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>JPQLDemoServlet</servlet-name>
+			<url-pattern>/jPQLDemoServlet</url-pattern>
+		</servlet-mapping>
+</web-app>
+

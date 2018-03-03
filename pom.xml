@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.example.jpa</groupId>
+	<artifactId>TestJpa2</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>TestJpa2</name>
+	<description>Parent Maven Project</description>
+
+
+	<properties>
+		<!-- character encoding type -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- Java EE version -->
+		<javaee-version>7.0</javaee-version>
+
+		<!-- Java Source and target Version -->
+		<java-source-version>1.8</java-source-version>
+		<java-target-version>1.8</java-target-version>
+
+		<maven-compiler-plugin-version>3.7.0</maven-compiler-plugin-version>
+		<maven-ejb-plugin-version>3.0.0</maven-ejb-plugin-version>
+		<ejbVersion>3.2</ejbVersion>
+		<maven-war-plugin-version>3.2.0</maven-war-plugin-version>
+		<maven-ear-plugin-version>2.10.1</maven-ear-plugin-version>
+
+		<application.xml.version>7</application.xml.version>
+
+		<!-- Project co-ordinates -->
+		<projject-groupId>com.example.jpa</projject-groupId>
+		<project-version>0.0.1-SNAPSHOT</project-version>
+	</properties>
+
+
+	<!-- Common dependencies and their information at project level will be 
+		here in dependencyManagement tag. All project inherited from this won' resolve 
+		these dependencies automatically, rather they will have to declare them on 
+		dependencies tag -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>${javaee-version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.12</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+	<!-- Common plug-ins and their information at project level will be here 
+		in pluginManagement tag -->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin-version}</version>
+					<configuration>
+						<source>${java-source-version}</source>
+						<target>${java-target-version}</target>
+						<encoding>${project.build.sourceEncoding}</encoding>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<!-- Child modules of this parent project will be listed here in modules 
+		tag -->
+	<modules>
+		<module>TestEjbModule</module>
+		<module>TestWebModule</module>
+		<module>TestEarModule</module>
+	</modules>
+</project>
